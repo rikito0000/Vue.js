@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">　
     <title>Document</title>
 </head>
+
 <body>
-    <h1>test</h1>
-    <p>test</p>
+    <ul id="example">
+        <li 
+          v-for='member in members'
+          v-bind:key="member"
+        >
+            {{member}}
+        </li>
+    </ul>
+    <script src="main.js"></script>
 </body>
+
 </html>
-
-
-
